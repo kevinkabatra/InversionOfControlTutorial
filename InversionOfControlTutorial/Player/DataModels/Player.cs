@@ -5,7 +5,7 @@
 
     public class Player
     {
-        private ICar _car;
+        private readonly ICar _car;
 
         /// <summary>
         ///     Constructor.
@@ -13,6 +13,16 @@
         public Player()
         {
             _car = CarFactory.CreateNewCar();
+            _car.StartEngine();
+        }
+
+        /// <summary>
+        ///     Constructor injection.
+        /// </summary>
+        /// <param name="car"></param>
+        public Player(ICar car)
+        {
+            _car = car;
             _car.StartEngine();
         }
 

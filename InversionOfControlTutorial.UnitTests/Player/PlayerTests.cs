@@ -1,6 +1,9 @@
 ﻿namespace InversionOfControlTutorial.UnitTests.Player
 {
+    using InversionOfControlTutorial.Car.DataModels;
     using InversionOfControlTutorial.Player.DataModels;
+
+    using Moq;
     using Xunit;
 
     public class PlayerTests
@@ -17,6 +20,14 @@
         {
             var player = new Player();
             Assert.True(player.IsPlayersCarRunning());
+        }
+
+        [Fact]
+        public void PlayerCanHaveAnyCar()
+        {
+            var fakeCar = new Mock<ICar>();
+            var player = new Player(fakeCar.Object);
+            Assert.NotNull(player);
         }
     }
 }
