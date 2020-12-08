@@ -1,7 +1,7 @@
-﻿namespace InversionOfControlTutorial.UnitTests.Player
+﻿namespace BusinessLogic.UnitTests.Player
 {
-    using InversionOfControlTutorial.Car.DataModels;
-    using InversionOfControlTutorial.Player.DataModels;
+    using BusinessLogic.Car.DataModels;
+    using BusinessLogic.Player.DataModels;
 
     using Moq;
     using Xunit;

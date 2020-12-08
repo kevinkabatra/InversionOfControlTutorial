@@ -1,4 +1,4 @@
-﻿namespace InversionOfControlTutorial.Car.DataModels
+﻿namespace BusinessLogic.Car.DataModels
 {
     public class Car : ICar
     {

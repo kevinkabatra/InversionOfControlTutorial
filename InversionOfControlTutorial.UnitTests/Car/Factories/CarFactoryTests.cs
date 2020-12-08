@@ -1,6 +1,6 @@
-﻿namespace InversionOfControlTutorial.UnitTests.Car.Factories
+﻿namespace BusinessLogic.UnitTests.Car.Factories
 {
-    using InversionOfControlTutorial.Car.Factories;
+    using BusinessLogic.Car.Factories;
     using Xunit;
 
     public class CarFactoryTests

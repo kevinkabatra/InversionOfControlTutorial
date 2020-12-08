@@ -1,4 +1,4 @@
-﻿namespace InversionOfControlTutorial.Player.DataModels
+﻿namespace BusinessLogic.Player.DataModels
 {
     using Car.DataModels;
     using Car.Factories;
