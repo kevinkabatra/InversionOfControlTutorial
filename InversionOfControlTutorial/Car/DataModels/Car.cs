@@ -1,21 +1,16 @@
 ﻿namespace InversionOfControlTutorial.Car.DataModels
 {
-    public class Car
+    public class Car : ICar
     {
         private bool isEngineRunning = false;
 
-        /// <summary>
-        ///     Determines the state that the engine is in.
-        /// </summary>
-        /// <returns></returns>
+        /// <inheritdoc/>
         public bool GetEngineState()
         {
             return isEngineRunning;
         }
 
-        /// <summary>
-        ///     Starts the engine.
-        /// </summary>
+        /// <inheritdoc/>
         public void StartEngine()
         {
             isEngineRunning = true;

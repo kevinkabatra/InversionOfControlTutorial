@@ -5,7 +5,7 @@
 
     public class Player
     {
-        private Car _car;
+        private ICar _car;
 
         /// <summary>
         ///     Constructor.

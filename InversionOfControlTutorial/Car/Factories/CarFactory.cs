@@ -8,7 +8,7 @@
         ///     Creates a new Car.
         /// </summary>
         /// <returns></returns>
-        public static Car CreateNewCar()
+        public static ICar CreateNewCar()
         {
             return new Car();
         }
