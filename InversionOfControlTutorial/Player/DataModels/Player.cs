@@ -1,5 +1,8 @@
-﻿namespace InversionOfControlTutorial.DataModels
+﻿namespace InversionOfControlTutorial.Player.DataModels
 {
+    using Car.DataModels;
+    using Car.Factories;
+
     public class Player
     {
         private Car _car;
@@ -9,7 +12,7 @@
         /// </summary>
         public Player()
         {
-            _car = new Car();
+            _car = CarFactory.CreateNewCar();
             _car.StartEngine();
         }
 

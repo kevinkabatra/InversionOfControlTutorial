@@ -1,4 +1,4 @@
-﻿namespace InversionOfControlTutorial.DataModels
+﻿namespace InversionOfControlTutorial.Car.DataModels
 {
     public class Car
     {
