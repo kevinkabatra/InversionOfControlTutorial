@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionOfControlTutorial", "InversionOfControlTutorial\InversionOfControlTutorial.csproj", "{BDFCC31D-0FBC-4498-8D24-4B96CCF85B79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDFCC31D-0FBC-4498-8D24-4B96CCF85B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFCC31D-0FBC-4498-8D24-4B96CCF85B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFCC31D-0FBC-4498-8D24-4B96CCF85B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFCC31D-0FBC-4498-8D24-4B96CCF85B79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDF123C4-0D67-4E25-96FF-C8412482587F}
+	EndGlobalSection
+EndGlobal
