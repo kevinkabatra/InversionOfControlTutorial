@@ -16,7 +16,9 @@
         /// <returns></returns>
         public static Player GetPlayer()
         {
-            var player = new Player(GetCar());
+            //var player = new Player(GetCar());
+            using var scope = Container.BeginLifetimeScope(); //scope - is a tricky thing - do some more investigation on life-cycle, singleton, perRequest, etc. 
+            var player = scope.Resolve<Player>();
             return player;
         }
 
@@ -44,7 +46,7 @@
             // Note: You can register multiple types prior to build the container.
             builder.RegisterType<Car>().As<ICar>();
             builder.RegisterType<CarFactory>().AsSelf();
-
+            builder.RegisterType<Player>().AsSelf();
             // Build the inversion of control container
             Container = builder.Build();
         }
@@ -56,7 +58,7 @@
         private static void Main(string[] args)
         {
             Setup();
-            var player = GetPlayer();
+            var player = GetPlayer(); // can use container to auto-magically inject dependancies - it knows how to resolve both
             Console.WriteLine(String.Format("Is car running: {0}", player.IsPlayersCarRunning()));
         }
     }
