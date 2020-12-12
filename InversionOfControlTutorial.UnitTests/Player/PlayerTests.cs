@@ -2,7 +2,6 @@
 {
     using BusinessLogic.Car.DataModels;
     using BusinessLogic.Player.DataModels;
-
     using Moq;
     using Xunit;
 
@@ -13,6 +12,14 @@
         {
             var player = new Player();
             Assert.NotNull(player);
+        }
+
+        [Fact]
+        public void CanGetPlayerCar()
+        {
+            var fakeCar = new Mock<ICar>();
+            var player = new Player(fakeCar.Object);
+            Assert.NotNull(player.GetCar());
         }
 
         [Fact]

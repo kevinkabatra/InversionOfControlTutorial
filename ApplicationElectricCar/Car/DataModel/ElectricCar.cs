@@ -1,24 +1,25 @@
-﻿namespace BusinessLogic.Car.DataModels
+﻿namespace ApplicationElectricCar.Car.DataModel
 {
+    using BusinessLogic.Car.DataModels;
     using System.Threading.Tasks;
 
-    public class Car : CarAbstract
+    public class ElectricCar : CarAbstract
     {
-        private float fuel = 0f;
+        private float batteryPercentage = 0f;
 
-        public Car()
+        public ElectricCar()
         {
-            AddFuel();
+            ChargeBattery();
         }
 
-        public void AddFuel()
+        public void ChargeBattery()
         {
-            fuel = 20f;
+            batteryPercentage = 100f;
         }
 
         public override bool GetEngineState()
         {
-            if(fuel != 0)
+            if(batteryPercentage != 0)
             {
                 return base.GetEngineState();
             }
@@ -28,9 +29,9 @@
 
         protected override async Task<bool> EngineRunning()
         {
-            while(fuel != 0f)
+            while(batteryPercentage != 0f)
             {
-                fuel -= 0.5f;
+                batteryPercentage -= 2.5f;
                 await Task.Delay(100);
             }
 

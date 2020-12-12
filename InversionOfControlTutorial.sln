@@ -5,11 +5,15 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "InversionOfControlTutorial\BusinessLogic.csproj", "{BDFCC31D-0FBC-4498-8D24-4B96CCF85B79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.UnitTests", "InversionOfControlTutorial.UnitTests\BusinessLogic.UnitTests.csproj", "{5C170D34-47DD-44B9-8458-C92400C0D3CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.UnitTests", "InversionOfControlTutorial.UnitTests\BusinessLogic.UnitTests.csproj", "{5C170D34-47DD-44B9-8458-C92400C0D3CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{1CD12DF3-CF29-4A49-AB84-512FD1DE9DF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCar", "Application\ApplicationCar.csproj", "{1CD12DF3-CF29-4A49-AB84-512FD1DE9DF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "Application.UnitTests\Application.UnitTests.csproj", "{4B52A071-140D-45E4-9EE6-40C122C7F1A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCar.UnitTests", "Application.UnitTests\ApplicationCar.UnitTests.csproj", "{4B52A071-140D-45E4-9EE6-40C122C7F1A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationElectricCar", "ApplicationElectricCar\ApplicationElectricCar.csproj", "{D418D601-8169-4473-B1DE-D72D01807B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationElectricCar.UnitTests", "ApplicationElectricCar.UnitTests\ApplicationElectricCar.UnitTests.csproj", "{D3B96536-4286-48F6-A2B7-61E22E45878E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{4B52A071-140D-45E4-9EE6-40C122C7F1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B52A071-140D-45E4-9EE6-40C122C7F1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B52A071-140D-45E4-9EE6-40C122C7F1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D418D601-8169-4473-B1DE-D72D01807B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D418D601-8169-4473-B1DE-D72D01807B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D418D601-8169-4473-B1DE-D72D01807B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D418D601-8169-4473-B1DE-D72D01807B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B96536-4286-48F6-A2B7-61E22E45878E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B96536-4286-48F6-A2B7-61E22E45878E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B96536-4286-48F6-A2B7-61E22E45878E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B96536-4286-48F6-A2B7-61E22E45878E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

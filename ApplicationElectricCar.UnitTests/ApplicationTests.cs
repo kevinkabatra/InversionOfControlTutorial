@@ -1,7 +1,7 @@
-﻿namespace ApplicationCar.UnitTests
+namespace ApplicationElectricCar.UnitTests
 {
-    using ApplicationCar;
-    using BusinessLogic.Car.DataModels;
+    using ApplicationElectricCar;
+    using ApplicationElectricCar.Car.DataModel;
     using Xunit;
 
     public class ApplicationTests
@@ -9,13 +9,6 @@
         public ApplicationTests()
         {
             Program.Setup();
-        }
-
-        [Fact]
-        public void CanCreateCar()
-        {
-            var car = Program.GetCar();
-            Assert.NotNull(car);
         }
 
         [Fact]
@@ -33,12 +26,12 @@
         }
 
         [Fact]
-        public void PlayerHasCar()
+        public void PlayerHasElectricCar()
         {
             var player = Program.GetPlayer();
             var car = player.GetCar();
 
-            Assert.IsType<Car>(car);
+            Assert.IsType<ElectricCar>(car);
         }
     }
 }

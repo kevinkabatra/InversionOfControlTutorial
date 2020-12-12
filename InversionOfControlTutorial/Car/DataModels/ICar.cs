@@ -1,5 +1,7 @@
 ﻿namespace BusinessLogic.Car.DataModels
 {
+    using System.Threading.Tasks;
+
     public interface ICar
     {
         /// <summary>

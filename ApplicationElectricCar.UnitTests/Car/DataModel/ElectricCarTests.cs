@@ -1,40 +1,40 @@
-﻿namespace BusinessLogic.UnitTests.Car.DataModels
+﻿namespace ApplicationElectricCar.UnitTests.Car.DataModel
 {
-    using BusinessLogic.Car.DataModels;
+    using ApplicationElectricCar.Car.DataModel;
     using System.Threading.Tasks;
     using Xunit;
 
-    public class CarTests
+    public class ElectricCarTests
     {
         [Fact]
         public void CanCreateCar()
         {
-            var car = new Car();
+            var car = new ElectricCar();
             Assert.NotNull(car);
         }
 
         [Fact]
         public void NewCarIsNotRunning()
         {
-            var car = new Car();
+            var car = new ElectricCar();
             Assert.False(car.GetEngineState());
         }
 
         [Fact]
         public void CanStartCar()
         {
-            var car = new Car();
+            var car = new ElectricCar();
             car.StartEngine();
             Assert.True(car.GetEngineState());
         }
 
         [Fact]
-        public void CanRunOutOfFuel()
+        public void CanRunOutOfPower()
         {
-            var car = new Car();
+            var car = new ElectricCar();
             car.StartEngine();
-            
-            while(car.GetEngineState() == true)
+
+            while (car.GetEngineState() == true)
             {
                 // wait for fuel to burn
                 Task.Delay(1000);

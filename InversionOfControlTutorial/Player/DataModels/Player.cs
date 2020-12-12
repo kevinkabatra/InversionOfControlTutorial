@@ -27,6 +27,15 @@
         }
 
         /// <summary>
+        ///     Returns player's car.
+        /// </summary>
+        /// <returns></returns>
+        public ICar GetCar()
+        {
+            return _car;
+        }
+
+        /// <summary>
         ///     Determines if the player's car is currently running.
         /// </summary>
         /// <returns></returns>

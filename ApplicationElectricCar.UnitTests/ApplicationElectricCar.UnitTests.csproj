@@ -14,8 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\Application.csproj" />
-    <ProjectReference Include="..\InversionOfControlTutorial\BusinessLogic.csproj" />
+    <ProjectReference Include="..\ApplicationElectricCar\ApplicationElectricCar.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,15 @@
-﻿namespace ApplicationCar
+﻿namespace ApplicationElectricCar
 {
     using Autofac;
     using BusinessLogic.Car.DataModels;
     using BusinessLogic.Player.DataModels;
+    using Car.DataModel;
     using System;
 
     public class Program
     {
         private static IContainer Container { get; set; }
-        
+
         /// <summary>
         ///     Gets the player object.
         /// </summary>
@@ -17,20 +18,8 @@
         {
             using var scope = Container.BeginLifetimeScope();
             var player = scope.Resolve<Player>();
-            
-            return player;
-        }
 
-        /// <summary>
-        ///     Gets the car object.
-        /// </summary>
-        /// <returns></returns>
-        public static ICar GetCar()
-        {
-            using var scope = Container.BeginLifetimeScope();
-            var car = scope.Resolve<ICar>();
-            
-            return car;
+            return player;
         }
 
         /// <summary>
@@ -45,9 +34,9 @@
         public static void Setup()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterType<Car>().As<ICar>();
+            builder.RegisterType<ElectricCar>().As<ICar>();
             builder.RegisterType<Player>().AsSelf();
-            
+
             Container = builder.Build();
         }
 
